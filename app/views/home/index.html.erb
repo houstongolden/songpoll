@@ -1,21 +1,34 @@
 <div class="container">
 
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+	<h3>Home</h3>
+	<% @users.each do |user| %>
+	  <p>User: <%=link_to user.name, user %></p>
+	<% end %>
+
+<!-- Play by artist -->
+<h1>Popular Artists</h1>
+	<ul>
+		<li><a href="#" class="artist">Houston Golden</a></li>
+		<li><a href="#" class="artist">Conner Youngblood</a></li>
+		<li><a href="#" class="artist">Mutrix</a></li>
+	</ul>
+
+	<div id="artist_player">
+		<!-- ARTIST SOUNDCLOUD PLAYER LOADS HERE -->
+	</div>
+
+<!-- Play by genre -->
+<h1>Popular Genres</h1>
+	<ul>
+		<li><a href="#" class="genre">electronic</a></li>
+		<li><a href="#" class="genre">dubstep</a></li>
+		<li><a href="#" class="genre">rock</a></li>
+	</ul>
 
 
-		<ul>
-			<li><a href="#" class="genre">dubstep</a></li>
-			<li><a href="#" class="genre">electronic</a></li>
-			<li><a href="#" class="genre">punk</a></li>
-		</ul>
-
-
-		<div id="target">
-			<!-- SOUNDCLOUD PLAYER LOADS HERE -->
-		</div>
+	<div id="target" style="heigh: 800px;">
+		<!-- SOUNDCLOUD PLAYER LOADS HERE -->
+	</div>
 	
 </div>
 
@@ -23,3 +36,4 @@
 <div class="jumbotron">
 		<img src="http://cloud-media.com/wp-content/uploads/2013/12/songpoll-beta-logo-3-.png">
 </div>
+
